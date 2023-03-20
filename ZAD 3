@@ -1,0 +1,15 @@
+
+def szukanie(tablica, liczba):
+    for i in tablica:
+        if i == liczba:
+            return True
+    return False
+
+tablica = [9, 6, 8, 4, 71]
+liczba = int(input("Wprowadz liczbę: "))
+
+if szukanie(tablica, liczba):
+    print("Twoja liczba jest w tablicy!")
+else:
+    print("Twojej liczby nie ma w tablicy!")
+
