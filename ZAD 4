@@ -1,0 +1,12 @@
+tab = [2,-20,1,6]
+
+pierwszy = tab[0]
+n = len(tab)
+i = 1
+while i <= n-1:
+    if tab[i] < pierwszy:
+        pierwszy = tab[i]
+        i += 1
+        print(pierwszy)
+    else:
+        i += 1
