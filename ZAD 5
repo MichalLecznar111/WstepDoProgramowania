@@ -1,0 +1,8 @@
+tab =  [4,6,2,-3,6,2,9,3]
+
+najmniejsza = min(tab)
+for i in tab:
+    if najmniejsza != tab[0]:
+        najmn_index = tab.index(najmniejsza)
+        tab[0], tab[najmn_index] = tab[najmn_index], tab[0]
+print(tab)
