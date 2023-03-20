@@ -1,0 +1,24 @@
+import math
+
+a = int(input("Podaj a: "))
+b = int(input("Podaj b: "))
+c = int(input("Podaj c: "))
+
+
+delta = b * b - 4*a*c
+if a == 0:
+    print("to nie jest rownanie kwadratowe")
+if delta < 0:
+    print("false")
+elif delta == 0:
+    xd = - b / (2 * a)
+    print(int(xd))
+else:
+
+    delta = b * b - 4 * a * c
+    xe = (-b - math.sqrt(delta)) / (2 * a)
+    xa = (-b + math.sqrt(delta)) / (2 * a)
+    print(xe, xa)
+
+
+
