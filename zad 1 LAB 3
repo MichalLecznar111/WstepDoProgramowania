@@ -1,0 +1,41 @@
+a = int(input("Podaj a: "))
+b = int(input("Podaj b: "))
+
+
+i = 0
+
+while i == a:
+    if a == b:
+        print(a)
+    elif a > b:
+        a = a - b
+        i += 1
+    else:
+        b = b - a
+print(a)
+
+
+DOBRA
+def nwd(a, b):
+    while b:
+        a = b
+        b = a % b
+    return a
+
+p = nwd(10,5)
+print(p)
+
+DOBRA
+a = int(input("Podaj a: "))
+b = int(input("Podaj b: "))
+
+while a != b:
+    if a == b:
+        print(a)
+    elif a > b:
+        a = a - b
+    else:
+        b = b - a
+print(a)
+
+
