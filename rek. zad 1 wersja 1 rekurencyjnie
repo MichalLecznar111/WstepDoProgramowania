@@ -1,0 +1,8 @@
+def nwd(a, b):
+    if a == b:
+        return a
+    elif a > b:
+        return nwd(a - b, b)
+    else:
+        return nwd(a, b - a)
+print(nwd(100,99))
