@@ -1,0 +1,15 @@
+def hanoi(n, a, b, c):
+    if n > 0:
+        hanoi(n - 1, a, c, b)
+        c.append(a.pop())
+        hanoi(n - 1, b, a, c)
+
+a = [6,5,4,3, 2, 1]
+b = []
+c = []
+
+hanoi(len(a), a, b, c)
+
+print(f"a: {a}")
+print(f"b: {b}")
+print(f"c: {c}")
