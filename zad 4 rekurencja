@@ -1,10 +1,9 @@
-
-def kalkbin(x):
-    if x == 0:
+def kalk(i):
+    if i == 0:
         return "0"
+    elif i == 1:
+        return "1"
     else:
-        i , j = divmod(x, 2)
-        return kalkbin(i) + str(j)
+        return kalk(i // 2) + str(i % 2)
 
-
-print(kalkbin(12))
+print(kalk(20))
