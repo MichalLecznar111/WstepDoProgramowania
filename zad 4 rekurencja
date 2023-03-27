@@ -1,0 +1,10 @@
+def kalkbin(x):
+    if x == 0:
+        return "0"
+    else:
+        i , j = divmod(x, 2)
+        bin = kalkbin(i)
+        return bin + str(j)
+
+
+print(kalkbin(10))
