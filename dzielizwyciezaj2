@@ -1,0 +1,13 @@
+
+def suma(tab, lewa, prawa):
+    if lewa == prawa:
+        return tab[lewa]
+    else:
+        mid = (lewa + prawa) // 2
+        suma_lewa = suma(tab, lewa, mid)
+        suma_prawa = suma(tab, mid + 1, prawa)
+        return suma_lewa + suma_prawa
+
+tab = [0,2,3,4,1,2,6,9,15,6,2,7]
+x = suma(tab, 0, len(tab) - 1)
+print(x)
