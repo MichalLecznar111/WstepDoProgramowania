@@ -1,0 +1,11 @@
+tab = [0,2,3,4,1,2,6,9,15,6,2,7]
+def Szukaj(tab, lewa, prawa):
+    if lewa == prawa:
+        return(tab[lewa])
+    else:
+        mid = (lewa + prawa) // 2
+        max_Lewa = Szukaj(tab, lewa, mid)
+        max_Prawa = Szukaj(tab, mid + 1, prawa)
+        return max(max_Lewa, max_Prawa)
+
+print(Szukaj(tab, 0, len(tab) - 1))
